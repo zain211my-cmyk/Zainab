@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Food Order Form</title>
+    <style>
+        /* Reset body and font */
+        body {
+            background-image:url('Back.jpg');
+            background-repeat: no-repeat;
+            background-size: 1000px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+.marquee-container{
+    width: 900px;
+    overflow: hidden;
+    background: orange;
+    color: white;
+}
+
+.marquee-content{
+    display: inline-block;
+    padding-left: 100%;
+    white-space: nowrap;
+    animation: scroll 15s linear infinite;
+    font-size: 18px;
+}
+
+@keyframes scroll{
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+        /* Main heading */
+        h1 {
+            text-align: center;
+            width:830px;
+            border:2px solid black;
+            border-radius:10px;
+            margin: 20px auto;
+background: linear-gradient(0deg, rgba(111, 205, 222, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            color: white;
+            
+            padding: 20px 0;
+            transition: transform 0.5s, background 0.5s,box-shadow 0.5s;
+        }
+        
+        h1:hover
+        {
+        transform:scale(1.05);
+        box-shadow: 10px 12px 25px rgba(0, 0, 0, 0.6); /* bigger shadow on hover */
+}
+        
+
+        /* Container for menu + content */
+        .main-container {
+            display: flex;
+            border:2px solid black;
+            border-radius:10px;
+            width:830px;
+            height: 700px;
+            transition: transform 0.5s, background 0.5s,box-shadow 0.5s;
+        }
+        
+   .main-container:hover
+   {
+   transform:scale(1.05);
+   box-shadow: 10px 12px 25px rgba(0, 0, 0, 0.6);
+   
+   }
+
+        /* Left menu styling */
+        .menu {
+            width: 25%;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-right: 2px solid gray;
+            
+        }
+
+        .menu h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+   .menu a {
+    display: block;
+    padding: 12px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+    background: #22C1C3;
+background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    border: 1px solid gray;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.menu a:hover {
+    background-color: #FFD699; /* brighter on hover */
+    transform: scale(1.03);
+}
+
+        /* Right content frame */
+        .content {
+            width: 75%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Moving welcome text -->
+<div class="marquee-container">
+  <div class="marquee-content">
+    🍔 Welcome! 20% discount today! Try all cuisines 🍕 Enjoy your meal! 🎉
+  </div>
+</div>
+
+    <!-- Main heading -->
+    <h1>ONLINE FOOD ORDER FORM</h1>
+
+    <!-- Main container -->
+    <div class="main-container">
+
+        <!-- Left menu -->
+        <div class="menu">
+            <h2>MENU</h2>
+    <a href="home.html" target="frame">Home</a>
+            <a href="indian.html" target="frame">Indian Food</a>
+            <a href="chinese.html" target="frame">Chinese Food</a>
+            <a href="american.html" target="frame">American Food</a>
+            <a href="south indian.html" target="frame">South Indian Food</a>
+            <a href="order.html" target="frame">Desserts</a>
+            
+        </div>
+
+        <!-- Right iframe to display pages -->
+        <div class="content">
+        
+            <iframe name="frame"></iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>1

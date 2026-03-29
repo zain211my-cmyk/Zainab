@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>micro</title>
+</head>
+<style>
+body
+{
+
+background-image:url('Food.jpg');
+    background-repeat :no-repeat;
+    background-size:cover;
+}
+.form-box{
+    width:350px;
+    margin:30px auto;
+    padding:25px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.3);
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+    backdrop-filter:blur(10px);
+}
+
+input, select, textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:none;
+    border-bottom:2px solid #ccc;
+    background:transparent;
+    outline:none;
+}
+
+.foodtype{
+    display:flex;
+    gap:15px;
+}
+
+.menu{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.menu input{
+    width:auto;
+}
+
+.btns{
+    display:flex;
+    justify-content:space-between;
+}
+
+button{
+    width:45%;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:linear-gradient(45deg,#ff4b2b,#ff416c);
+    color:white;
+    cursor:pointer;
+}
+
+.success{
+    text-align:center;
+    color:green;
+    display:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+<h2>Food Order Form</h2>
+
+<form onsubmit="return showMessage()">
+
+<input type="text" placeholder="Enter your name" required>
+<input type="number" placeholder="Enter mobile number" required>
+<input type="text" placeholder="Delivery Address" required>
+
+<div class="foodtype">
+<label>Food Type:</label>
+<label><input type="radio" name="type"> Veg</label>
+<label><input type="radio" name="type"> Non-Veg</label>
+</div>
+
+
+<div class="menu">
+<label><input type="checkbox"> thali</label>
+<label><input type="checkbox"> butter chicken</label>
+<label><input type="checkbox"> paneer</label>
+<label><input type="checkbox"> biryani</label>
+
+</div>
+
+<input type="number" placeholder="Quantity" required>
+<textarea placeholder="Special instructions"></textarea>
+
+<div class="btns">
+<button type="reset">Reset</button>
+<button type="submit">Order Now</button>
+</div>
+
+</form>
+
+<div class="success" id="msg">
+🎉 Your order has been placed successfully!
+</div>

@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>food items</title>
+</head>
+<style>
+body
+{
+  background-color:#F0FFF0;
+}
+.section-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+.food-item{
+    text-align:center;
+}
+
+.food-item img{
+    width:250;
+    height:160px;
+    object-fit:cover;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.food-item img:hover{
+    transform:scale(1.05);
+}
+
+.food-item p{
+    margin:3px 0 0;
+    font-size:13px;
+    font-weight:bold;
+}
+ h3{
+    text-align:center;
+}
+a
+{
+text-align:center;
+text-decoration: none;
+color: black;
+
+}
+
+
+.order
+{
+background: linear-gradient(180deg, #FF5E5B 0%, #FFD93D 50%, #00A8E8 100%);
+    color: white;
+margin-top:50px;
+border:1px solid black;
+border-radius: 10px;
+}
+</style>
+<body>
+
+<div class="section">
+<h3>🍔 American Cuisine</h3>
+<div class="section-grid">
+
+<div class="food-item">
+<img src="pizza.jpg" onclick="window.open('https://en.wikipedia.org/wiki/Pizza','_blank')">
+<p>Pizza</p>
+</div>
+
+<div class="food-item">
+<img src="burger.jpg" onclick="window.open('https://en.wikipedia.org/wiki/Hamburger','_blank')">
+<p>Burger</p>
+</div>
+
+<div class="food-item">
+<img src="fries.jpg" onclick="window.open('https://en.wikipedia.org/wiki/French_fries','_blank')">
+<p>Fries</p>
+</div>
+
+<div class="food-item">
+<img src="sandwich.jpg" onclick="window.open('https://en.wikipedia.org/wiki/Sandwich','_blank')">
+<p>Sandwich</p>
+</div>
+
+</div>
+</div>
+<div class="order">
+<a href="aform.html">
+<p> ORDER NOW<P>
+</a>
+</div>
+<img src="Burger.png" width="200px" height="190px">
+</body>
+</html>
+

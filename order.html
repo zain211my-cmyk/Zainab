@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ice Cream Order Form</title>
+
+<style>
+body{
+    font-family: Arial;
+    background-color: #fce4ec;
+    text-align: center;
+}
+
+h2{
+    color: #d81b60;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ice{
+    margin: 20px;
+}
+
+img{
+    width: 180px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+form{
+    width: 320px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid gray;
+}
+
+input, select, textarea{
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons input{
+    width: 48%;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Ice Cream Menu</h2>
+
+<div class="container">
+
+<div class="ice">
+<img src="vanilla.jpg">
+<p>Vanilla</p>
+</div>
+
+<div class="ice">
+<img src="chocolate.jpg">
+<p>Chocolate</p>
+</div>
+
+<div class="ice">
+<img src="strawberry.jpg">
+<p>Strawberry</p>
+</div>
+
+<div class="ice">
+<img src="butterscotch.jpg">
+<p>Butterscotch</p>
+</div>
+
+</div>
+
+<h2>Order Ice Cream</h2>
+
+<form>
+
+<label>Your Name</label>
+<input type="text" required>
+
+<label>Select Flavor</label>
+<select>
+<option>Vanilla</option>
+<option>Chocolate</option>
+<option>Strawberry</option>
+<option>Butterscotch</option>
+</select>
+
+<label>Quantity</label>
+<input type="number" min="1" required>
+
+<label>Delivery Address</label>
+<textarea required></textarea>
+
+<div class="buttons">
+<input type="submit" value="Place Order">
+<input type="reset" value="Reset">
+</div>
+
+</form>
+
+</body>
+</html>

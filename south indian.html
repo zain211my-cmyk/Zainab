@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>food items</title>
+</head>
+<style>
+body
+{
+  background-color:#F0FFF0;
+}
+.section-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+
+.food-item{
+    text-align:center;
+}
+
+.food-item img{
+    width:250;
+    height:160px;
+    object-fit:cover;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.food-item img:hover{
+    transform:scale(1.05);
+}
+
+.food-item p{
+    margin:3px 0 0;
+    font-size:13px;
+    font-weight:bold;
+}
+ h3{
+    text-align:center;
+}
+a
+{
+text-align:center;
+text-decoration: none;
+color: black;
+
+}
+
+
+.order
+{
+background: linear-gradient(180deg, #A8E6CF 0%, #FFD3B6 50%, #FFAAA5 100%);
+    color: #333;
+margin-top:50px;
+border:1px solid black;
+border-radius: 10px;
+}
+</style>
+<body>
+
+<div class="section">
+<h3>🥞 South Indian Cuisine</h3>
+<div class="section-grid">
+
+<div class="food-item">
+<img src="dosa.jpg" onclick="window.open('https://en.wikipedia.org/wiki/Dosa','_blank')">
+<p>Dosa</p>
+</div>
+
+<div class="food-item">
+<img src="idli.jpg" onclick="window.open('https://en.wikipedia.org/wiki/Idli','_blank')">
+<p>Idli</p>
+</div>
+
+<div class="food-item">
+<img src="vada.jpg" onclick="window.open('https://en.wikipedia.org/wiki/Vada','_blank')">
+<p>Vada</p>
+</div>
+
+<div class="food-item">
+<img src="uttapam.jpg" onclick="window.open('https://en.wikipedia.org/wiki/Uttapam','_blank')">
+<p>Uttapam</p>
+</div>
+
+</div>
+</div>
+<div class="order">
+<a href="sform.html">
+<p> ORDER NOW<P>
+</a>
+</div>
+<img src="D.jpg" width="200px" height="190px">
+</body>
+</html>
+

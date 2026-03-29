@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>food items</title>
+</head>
+<style>
+body
+{
+  background: #6D9775;
+background: linear-gradient(90deg, rgba(109, 151, 117, 1) 0%, rgba(111, 150, 116, 1) 0%, rgba(114, 149, 115, 1) 0%, rgba(166, 123, 92, 1) 100%, rgba(200, 178, 130, 1) 100%);
+}
+.section-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    
+}
+.section
+{
+border:1px black;
+}
+.food-item{
+    text-align:center;
+}
+
+
+.food-item img{
+    width:250;
+    height:160px;
+    object-fit:cover;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.food-item img:hover{
+    transform:scale(1.05);
+}
+
+.food-item p{
+    margin:3px 0 0;
+    font-size:13px;
+    font-weight:bold;
+}
+ h3{
+    text-align:center;
+}
+
+a
+{
+text-align:center;
+text-decoration: none;
+color: black;
+
+}
+
+
+.order
+{
+background: #833AB4;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 0%, rgba(122, 100, 100, 1) 0%, rgba(252, 176, 69, 1) 100%);
+margin-top:50px;
+border:1px solid black;
+border-radius: 10px;
+}
+</style>
+<body>
+
+<div class="section">
+<h3>🍛 Indian Cuisine</h3>
+<div class="section-grid">
+
+<div class="food-item">
+<img src="biryani.jpg" onclick="window.open('https://en.wikipedia.org/wiki/Biryani','_blank')">
+<p>Biryani</p>
+</div>
+
+<div class="food-item">
+<img src="paneer.jpg" onclick="window.open('https://en.wikipedia.org/wiki/Paneer','_blank')">
+<p>Paneer</p>
+</div>
+
+<div class="food-item">
+<img src="thali.jpg" onclick="window.open('https://en.wikipedia.org/wiki/Thali','_blank')">
+<p>Thali</p>
+</div>
+
+<div class="food-item">
+<img src="butterchicken.jpg" onclick="window.open('https://en.wikipedia.org/wiki/Butter_chicken','_blank')">
+<p>Butter Chicken</p>
+</div>
+
+
+
+</div>
+</div>
+<div class="order">
+<a href="Iform.html">
+<p> ORDER NOW<P>
+</a>
+</div>
+<img src="emoji.png" width="200px" height="190px">
+</body>
+
+</html>
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html><html>
+<head>
+<title>Burger Order Form</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+}.container { width: 400px; margin: 40px auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3); }
+
+h2 { text-align: center; color: #d62828; }
+
+label { font-weight: bold; }
+
+input, select, textarea { width: 100%; padding: 8px; margin: 8px 0 15px 0; border: 1px solid #ccc; border-radius: 5px; }
+
+button { width: 100%; padding: 10px; background: #d62828; color: white; border: none; border-radius: 5px; font-size: 16px; }
+
+button:hover { background: #a61e1e; } </style>
+
+</head><body><div class="container">
+    <h2> Biryani Order Form</h2><form>
+    <label>Customer Name:</label>
+    <input type="text" placeholder="Enter your name" required>
+
+    <label>Phone Number:</label>
+    <input type="tel" placeholder="Enter your phone number" required>
+
+    <label>Select Burger:</label>
+    <select required>
+        <option value="">--Choose biryani--</option>
+        <option>Veg Biryani</option>
+        <option>chicken Biryani</option>
+    </select>
+
+    <label>Quantity:</label>
+    <input type="number" min="1" max="10" required>
+
+    
+
+    <label>Delivery Address:</label>
+    <textarea rows="3" placeholder="Enter your address" required></textarea>
+
+    <button type="submit">Place Order</button>
+</form>
+
+</div></body>
+</html>
